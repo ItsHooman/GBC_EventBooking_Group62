@@ -21,6 +21,7 @@ dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-actuator")
 	implementation ("org.springframework.boot:spring-boot-starter-data-jpa")
 	implementation("org.springframework.boot:spring-boot-starter-web")
+	implementation ("org.springframework.cloud:spring-cloud-starter-openfeign")
 	implementation("io.micrometer:micrometer-tracing-bridge-brave")
 	developmentOnly("org.springframework.boot:spring-boot-devtools")
 	runtimeOnly("org.postgresql:postgresql")
