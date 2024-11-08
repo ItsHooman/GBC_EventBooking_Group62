@@ -40,7 +40,7 @@ public class Booking {
         this.userId = userId;
     }
 
-    public String getRoomId() {
+    public Long getRoomId() {
         return roomId;
     }
 
