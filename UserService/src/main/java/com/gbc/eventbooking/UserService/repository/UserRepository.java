@@ -1,0 +1,14 @@
+package com.gbc.eventbooking.UserService.repository;
+
+import com.gbc.eventbooking.UserService.model.User;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import java.util.Optional;
+
+@Repository
+public interface UserRepository extends JpaRepository<User, Long> {
+
+    // Find user by email for role-based access
+    Optional<User> findByEmail(String email);
+}
