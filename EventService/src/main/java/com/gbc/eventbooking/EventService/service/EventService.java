@@ -1,5 +1,6 @@
 package com.gbc.eventbooking.EventService.service;
 
+import com.gbc.eventbooking.EventService.client.UserServiceClient;
 import com.gbc.eventbooking.EventService.model.Event;
 import com.gbc.eventbooking.EventService.repository.EventRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,6 +10,9 @@ import java.util.List;
 
 @Service
 public class EventService {
+
+    @Autowired
+    private UserServiceClient userServiceClient;
 
     @Autowired
     private EventRepository eventRepository;
