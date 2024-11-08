@@ -29,7 +29,14 @@ dependencies {
 	testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 
 }
+dependencyManagement {
+	imports {
+		mavenBom("org.springframework.cloud:spring-cloud-dependencies:2021.0.4")
+	}
 
-tasks.withType<Test> {
-	useJUnitPlatform()
+
+
+	tasks.withType<Test> {
+		useJUnitPlatform()
+	}
 }
